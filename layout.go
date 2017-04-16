@@ -5,18 +5,18 @@ import (
 	"github.com/sparkymat/webdsl/html"
 )
 
-func Container(children ...html.ChildNode) *html.Node {
+func Container(children ...*html.Node) *html.Node {
 	return html.Div().Class(classes.Container).Add(children...)
 }
 
-func ContainerFluid(children ...html.ChildNode) *html.Node {
+func ContainerFluid(children ...*html.Node) *html.Node {
 	return html.Div().Class(classes.ContainerFluid).Add(children...)
 }
 
-func Row(children ...html.ChildNode) *html.Node {
+func Row(children ...*html.Node) *html.Node {
 	return html.Div().Class(classes.Row).Add(children...)
 }
 
-func Col(children ...html.ChildNode) *html.Node {
+func Col(children ...*html.Node) *html.Node {
 	return html.Div().Class(classes.Col).Add(children...)
 }
