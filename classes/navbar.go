@@ -13,3 +13,9 @@ const NavbarTogglerIcon css.Class = "navbar-toggler-icon"
 
 const NavbarBrand css.Class = "navbar-brand"
 const NavbarInverse css.Class = "navbar-inverse"
+
+const NavbarNav css.Class = "navbar-nav"
+const NavItem css.Class = "nav-item"
+const Active css.Class = "active"
+
+const NavLink css.Class = "nav-link"
