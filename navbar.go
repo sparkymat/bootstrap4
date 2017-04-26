@@ -6,10 +6,12 @@ import (
 	"github.com/sparkymat/webdsl/html"
 )
 
-func Navbar(title string, links map[string]string, currentPath string) *html.Node {
+func Navbar(title string, links [][2]string, currentPath string) *html.Node {
 	linkNodes := []*html.Node{}
 
-	for title, url := range links {
+	for _, linkDetails := range links {
+		title := linkDetails[0]
+		url := linkDetails[1]
 		liClasses := []css.Class{classes.NavItem}
 		if url == currentPath {
 			liClasses = append(liClasses, classes.Active)
